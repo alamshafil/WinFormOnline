@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>WinFormOnline by Furious</title>
+</head>
+<body>
+    <div id="ooui-body" class="container-fluid">
+        <h2>welcome to my trash website <br> as you can see i am running winform inside of a browser</h2>
+        <p id="loading">Loading... <br> This will take some time.</p>
+    </div>
+     <div >
+      <canvas id="canvas"></canvas>
+    </div>
+    <p>App Console</p>
+    <textarea id="output" rows="8"></textarea>
+    <script type="text/javascript">
+        
+        var App = {
+			init: function () {
+                Module.canvas = document.getElementById('canvas');
+				// initialize geolocation sample
+				BINDING.call_static_method("[WinFormOnline] WinFormOnline.Program:Main", []);
+			}
+		}; 
+    </script>
+        <script type="text/javascript" src="runtime.js"></script>
+        <script async type="text/javascript" src="mono.js"></script>
+        <script async type="text/javascript" src="mono-config.js"></script>
+</body>
+</html>
